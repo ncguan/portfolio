@@ -17,22 +17,59 @@ header{
 header h1{
     padding:5px;
     text-align: right;
-    color: black;
+    color:#191019;
     background-color: #06D6A0;
     width:20%;
 }
 nav{
     display: flex;
-    justify-content: end;
     position:absolute;
     right:0;
 }
 
 nav a{
+    padding: 20px;
     color: white;
-    padding: 15px;
 }
 
 nav li{
     display:inline-block;
 }
+
+section{
+    margin: 20px;
+    border-style: solid;
+    border-width: 5px;;
+    border-color:#06D6A0;
+}
+
+.about-me p{
+    padding-top: 20px;
+    line-height: 1.5;
+}
+
+.contact-me ul{
+    text-align: center;
+}
+
+.contact-me li{
+    display:inline-block;
+    padding: 20px 10px;
+}
+
+/*
+@media screen and (max-width:480px){
+    .work{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:768px){
+    .work{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:1024px){
+    .work{
+        flex-direction: column;
+    }
+}*/
