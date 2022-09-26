@@ -43,6 +43,23 @@ section{
     border-color:#06D6A0;
 }
 
+.work{
+    display:flex;
+}
+
+.main-project,
+.placeholder-project,
+.sub-project,
+.another-project {
+    margin: 20px;
+}
+img {
+    max-height: 500px;
+    max-width: 750px;
+    height: auto;
+    width: auto;
+}
+
 .about-me p{
     padding-top: 20px;
     line-height: 1.5;
