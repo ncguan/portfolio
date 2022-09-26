@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #faebd7;
+}
+
+header{
+    padding:20px;
+    background-color: #191019;
+}
+
+header h1{
+    padding:5px;
+    text-align: right;
+    color: black;
+    background-color: #06D6A0;
+    width:20%;
+}
+nav{
+    display: flex;
+    justify-content: end;
+    position:absolute;
+    right:0;
+}
+
+nav a{
+    color: white;
+    padding: 15px;
+}
+
+nav li{
+    display:inline-block;
+}
