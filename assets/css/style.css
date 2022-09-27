@@ -45,19 +45,40 @@ section{
 
 .work{
     display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.main-project,
+.work img {
+    height: 150px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.main-project{
+    padding:20px;
+    flex: 0 0 100%;
+    height: 300px;
+    width: 600px;
+}
+.work .main-project img {
+    width: 100%;
+    height: 100%;
+}
+
 .placeholder-project,
 .sub-project,
-.another-project {
-    margin: 20px;
+.another-project{
+    padding:20px;
+    flex:0 0 50%;
+    height: 150px;
+    width: 300px;
 }
-img {
-    max-height: 500px;
-    max-width: 750px;
-    height: auto;
-    width: auto;
+.placeholder-project img,
+.sub-project img,
+.another-project img{
+    width: 100%;
+    height: 100%;
 }
 
 .about-me p{
@@ -74,7 +95,6 @@ img {
     padding: 20px 10px;
 }
 
-/*
 @media screen and (max-width:480px){
     .work{
         flex-direction: column;
@@ -89,4 +109,4 @@ img {
     .work{
         flex-direction: column;
     }
-}*/
+}
