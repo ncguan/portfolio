@@ -14,47 +14,86 @@ header{
     background-color: #191019;
 }
 
+/*heading text*/
 header h1{
     padding:5px;
-    text-align: right;
+    text-align: center;
     color:#191019;
     background-color: #06D6A0;
-    width:20%;
-}
-nav{
-    display: flex;
-    position:absolute;
-    right:0;
+    width:300px;
+    font-size:50px;
 }
 
+/*navigation bar positioned at bottom right of header (absolute right to the whole page)*/
+nav{
+    display: flex;
+    /*position:absolute;
+    right:0;*/
+    margin-left:70%;
+}
+
+/*navigation link color and position*/
 nav a{
     padding: 20px;
     color: white;
 }
 
+/*list of navigation items are positioned side by side*/
 nav li{
     display:inline-block;
+    font-size:20px;
 }
 
+/*space around sections*/
 section{
     margin: 20px;
-    border-style: solid;
-    border-width: 5px;;
-    border-color:#06D6A0;
 }
 
+/*about me and contact me heading positioning*/
+h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    padding:10px;
+    text-align: center;
+    background-color: #06D6A0;
+}
+
+/*make avatar and about me text side by side*/
+.about-me{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.about-me img{
+    margin: 0 20px 20px 20px;
+}
+
+/*about me paragraph positioning*/
+.about-me p{
+    padding-top: 20px;
+    line-height: 1.5;
+}
+
+/*positioning of work including headings and images*/
 .work{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom:20px;
 }
 
+/*headings are in flex box and want them on their own line*/
+.about-me h2,
+.work h2{
+    flex: 0 0 100%;
+}
+
+/*prevents images from stretching*/
 .work img {
-    height: 150px;
-    width: 300px;
     object-fit: cover;
 }
 
+/*main project size and takes up the entire width of page*/
 .main-project{
     padding:20px;
     flex: 0 0 100%;
@@ -62,6 +101,7 @@ section{
     width: 600px;
 }
 
+/*other project size and takes up 50% of width of page*/
 .placeholder-project,
 .sub-project,
 .another-project{
@@ -70,33 +110,45 @@ section{
     height: 150px;
     width: 300px;
 }
+
+/*project images stay within the height and width*/
 .main-project img,
 .placeholder-project img,
 .sub-project img,
 .another-project img{
+    border-style: solid;
+    border-color: #06D6A0;
     width: 100%;
     height: 100%;
+    margin:10px;
 }
 
-.main-project img:hover,
-.placeholder-project img:hover,
-.sub-project img:hover,
-.another-project img:hover{
+/*when mouse hovers over headings and images opacity changes*/
+.main-project:hover,
+.placeholder-project:hover,
+.sub-project:hover,
+.another-project:hover{
     opacity: 0.5;
 }
 
-.about-me p{
-    padding-top: 20px;
-    line-height: 1.5;
+/*position and style of project heading*/
+h3{
+    position: absolute;
+    background-color: #06D6A0;
+    width:150px;
+    padding: 10px;
+    font-size: 20px;
 }
 
+/*makes the list align center*/
 .contact-me ul{
     text-align: center;
 }
 
+/*displays each item in the list side by side and spacing*/
 .contact-me li{
     display:inline-block;
-    padding: 20px 10px;
+    padding: 15px;
 }
 
 @media screen and (max-width:480px){
